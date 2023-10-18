@@ -1,4 +1,7 @@
 /// <reference types="cypress" />
+
+import { CONSENT_COOKIE_NAME, CONSENT_COOKIE_VALUE } from "./pages/cookiesPage";
+
 // ***********************************************
 // This example commands.ts shows you how to
 // create various custom commands and overwrite
@@ -11,7 +14,7 @@
 //
 //
 // -- This is a parent command --
-// Cypress.Commands.add('login', (email, password) => { ... })
+Cypress.Commands.add('setCookiesConsent' , () => { cy.setCookie(CONSENT_COOKIE_NAME,CONSENT_COOKIE_VALUE) });
 //
 //
 // -- This is a child command --
