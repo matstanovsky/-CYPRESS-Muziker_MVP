@@ -7,7 +7,7 @@ export const DISAGREE_AND_SETUP_LABEL:string = "Nesúhlasím a nastaviť";
 export const ENABLE_ALL_LABEL: string = "Povoliť všetky";
 export const ENABLE_SELECTED_LABEL: string = "Povoliť vybrané";
 export const ENABLED_LABEL: string = "Povolené";
-export const CONSENT_SELECTED_COOKIE_VALUE: string = "%7B%22marketingCookie%22%3Afalse%2C%22analyticsCookie%22%3Afalse%7D";
+export const CONSENT_SELECTED_COOKIE_VALUE: string = "{%22marketingCookie%22:false%2C%22analyticsCookie%22:false}";
 
 export function openCookiesSettings(){
     cy.get(BUTTON_SUCCESS_CLASS_LOCATOR).contains(DISAGREE_AND_SETUP_LABEL).click();
