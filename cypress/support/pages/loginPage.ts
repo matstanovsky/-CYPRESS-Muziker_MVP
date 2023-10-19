@@ -1,0 +1,1 @@
+export const loginButton = () => {return cy.get('[type="submit"][value="Prihlásiť"]').click()}
