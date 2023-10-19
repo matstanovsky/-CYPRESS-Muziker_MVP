@@ -37,7 +37,7 @@ describe('Cookies alert', () => {
       .should('have.property','value',CONSENT_COOKIE_VALUE);
   })
 
-  it.only('Setting selected cookies set cookie correctly', () => {
+  it('Setting selected cookies set cookie correctly', () => {
     openCookiesSettings();
     cy.get(BUTTON_SUCCESS_CLASS_LOCATOR).contains(ENABLE_SELECTED_LABEL).click({force:true});
     cy.getCookie(CONSENT_COOKIE_NAME)
